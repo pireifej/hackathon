@@ -1,0 +1,82 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MyActivity">
+
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:stretchColumns="1">
+        <TableRow>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <EditText
+                    android:id="@+id/editText1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="40dp" >
+
+                    <requestFocus />
+                </EditText>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="email " />
+            </FrameLayout>
+        </TableRow>
+
+        <TableRow>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <EditText
+                    android:id="@+id/editText2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="40dp" >
+
+                    <requestFocus />
+                </EditText>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="parent's email (if under 18)" />
+            </FrameLayout>
+
+        </TableRow>
+
+
+        <TableRow>
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content" android:gravity="bottom"
+                android:layout_height="wrap_content"
+                android:src="@drawable/logo" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView android:layout_width="match_parent" android:gravity="left" android:scrollbars="vertical"
+                android:layout_height="wrap_content" android:id="@+id/textView1" />
+
+        </TableRow>
+
+    </TableLayout>
+
+
+</RelativeLayout>
